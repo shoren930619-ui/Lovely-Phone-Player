@@ -234,7 +234,7 @@
             font-weight: bold;
             flex-shrink: 0;
         }
-        .track-item.active .track-num { color: rgba(255,255,255,0.9); }
+        .track-item.active .track-num { color: var(--text-sub); opacity: 1; }
 
         .track-info { display: flex; flex-direction: column; width: 100%; overflow: hidden;}
         
@@ -247,7 +247,7 @@
 
         .track-title { font-weight: 600; font-size: 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
         .track-genre { font-size: 11px; color: var(--text-sub); text-align: right; flex-shrink: 0; margin-left: 10px;}
-        .track-item.active .track-genre { color: rgba(255,255,255,0.8); }
+        .track-item.active .track-genre { color: var(--text-sub); }
 
         .track-lyrics {
             font-size: 12px;
@@ -327,7 +327,7 @@
             top: 50%;
             transform: translateY(-50%);
             width: 10px; height: 10px;
-            background: white;
+            background: var(--text-main);
             border-radius: 50%;
             box-shadow: 0 1px 3px rgba(0,0,0,0.3);
         }
@@ -717,5 +717,4 @@
         }
     </script>
 </body>
-
 </html>
